@@ -1,0 +1,1056 @@
+/*--- Start Font Face --*/
+@font-face {
+  font-family: 'PlayfairDisplayRegular';
+  src: url("../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'PlayfairDisplayBold';
+  src: url("../fonts/PlayfairDisplay-Bold.woff") format("woff"), url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'PlayfairDisplayBoldItalic';
+  src: url("../fonts/PlayfairDisplay-BoldItalic.woff") format("woff"), url("../fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'PlayfairDisplayItalic';
+  src: url("../fonts/PlayfairDisplay-Italic.woff") format("woff"), url("../fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+}
+
+/*--- End Font Face --*/
+/*-----*/
+/*-----*/
+/*--- Start HTML --*/
+* {
+  font-family: 'PlayfairDisplayRegular', sans-serif;
+  font-size: 18px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body {
+  background: #eee;
+  overflow-x: hidden;
+}
+
+body.night {
+  background: #222;
+}
+
+body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+p, li, h1, h2, h3, h4 {
+  color: #222;
+}
+
+p.night, li.night, h1.night, h2.night, h3.night, h4.night {
+  color: #fff;
+}
+
+/*--- End HTML --*/
+/*-----*/
+/*-----*/
+/*--- Start Container --*/
+#main-container {
+  margin: auto;
+  width: 1024px;
+  min-height: 300px;
+}
+
+#main-container:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+#content-container {
+  background: #fff;
+  width: 100%;
+  border: 1px solid #ddd;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#content-container:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+#content-container:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background: #fff;
+  left: 8px;
+  top: 8px;
+  border: 1px solid #ddd;
+}
+
+#content-container.night {
+  background: #222;
+  border: 1px solid #222;
+}
+
+#content-container.night:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background: #222;
+  left: 8px;
+  top: 8px;
+  border: 1px solid #222;
+}
+
+/*--- End Container --*/
+/*-----*/
+/*-----*/
+/*--- Start Header --*/
+header {
+  padding: 20px 0;
+}
+
+header:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/*--- End Header --*/
+/*-----*/
+/*-----*/
+/*--- Start Navigation --*/
+nav {
+  float: right;
+  margin: 0 10px;
+}
+
+nav h2 {
+  line-height: 0;
+  margin: 0;
+}
+
+nav li {
+  list-style-type: none;
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav li a.current {
+  color: #ff7200;
+}
+
+nav li a:hover {
+  color: #ff7200;
+}
+
+nav li a.night {
+  color: #fff;
+}
+
+nav li a.night.current {
+  color: #ff7200;
+}
+
+nav li a.night:hover {
+  color: #ff7200;
+}
+
+#burger-nav {
+  display: none;
+}
+
+/*--- End Navigation --*/
+/*-----*/
+/*-----*/
+/*--- Start Main --*/
+main {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+main p {
+  text-align: justify;
+}
+
+/*--- End Main --*/
+/*-----*/
+/*-----*/
+/*--- Start Article --*/
+article .article-title {
+  margin-top: 20px;
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+
+article .article-title h1 {
+  font-family: 'PlayfairDisplayBold', sans-serif;
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0;
+}
+
+article .article-title:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+article .article-date {
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
+article .article-date h2 {
+  text-align: right;
+  float: right;
+  font-family: 'PlayfairDisplayItalic', sans-serif;
+  font-size: 0.8em;
+  font-weight: normal;
+  margin-right: 5px;
+}
+
+article .article-date .day-night-button {
+  float: right;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #e6e6e6;
+  padding: 5px 10px;
+  background-color: #eee;
+}
+
+article .article-date .day-night-button:hover {
+  border: 1px solid #e6e6e6;
+  padding: 5px 10px;
+  background-color: #222;
+  color: #fff;
+}
+
+article .article-date .day-night-button.night {
+  background-color: #222;
+  color: #fff;
+}
+
+article .article-date .day-night-button.night:hover {
+  border: 1px solid #e6e6e6;
+  padding: 5px 10px;
+  background-color: #eee;
+  color: #222;
+}
+
+article .article-date:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+article .article-content {
+  width: 100%;
+}
+
+article .article-content p {
+  text-align: left;
+  padding: 0 50px;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+article .article-content figure {
+  margin: 0;
+  text-align: center;
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+article .article-content figure img {
+  width: 100%;
+}
+
+article .article-content figure figcaption {
+  padding: 0 20px;
+  margin-top: 5px;
+}
+
+article .article-content figure figcaption p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7em;
+  text-align: left;
+}
+
+article .article-content blockquote {
+  margin: 0 50px;
+  text-align: left;
+  border-left: 4px solid #eee;
+}
+
+article .article-content blockquote p {
+  font-family: 'PlayfairDisplayBoldItalic', sans-serif;
+  font-size: 0.8em;
+  padding: 15px 20px;
+}
+
+/*--- End Article --*/
+/*-----*/
+/*-----*/
+/*--- Start Fin --*/
+#fin {
+  padding: 0 100px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#fin .fin-inner {
+  margin: auto;
+  position: relative;
+}
+
+#fin .fin-inner .line {
+  position: absolute;
+  left: 0;
+  background: #ddd;
+  height: 1px;
+  top: 50%;
+  width: 100%;
+}
+
+#fin .fin-inner .line.night {
+  background: #fff;
+}
+
+#fin .fin-inner p {
+  position: relative;
+  display: table;
+  margin: auto;
+  min-width: 100px;
+  text-align: center;
+  background: #fff;
+  font-family: 'PlayfairDisplayBoldItalic', sans-serif;
+}
+
+#fin .fin-inner p.night {
+  background: #222;
+}
+
+/*--- End Fin --*/
+/*-----*/
+/*-----*/
+/*--- Start Comments Section --*/
+#comment {
+  min-height: 100px;
+  padding: 0 50px;
+}
+
+#comment h1 {
+  font-family: 'PlayfairDisplayBold', sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+#comment li {
+  float: left;
+  margin-bottom: 40px;
+  list-style-type: none;
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  background: #ddd;
+  border: 2px solid #ddd;
+}
+
+#comment li .photo-area {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 100px;
+}
+
+#comment li .photo-area .image-box {
+  position: relative;
+  width: 80%;
+  /* desired width */
+  background-color: #fff;
+  z-index: 99999;
+  margin: auto;
+  margin-top: -20px;
+  border: 1px solid #ddd;
+}
+
+#comment li .photo-area .image-box img {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  min-width: 90%;
+  min-height: 90%;
+}
+
+#comment li .photo-area .image-box:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  /* initial ratio of 1:1*/
+}
+
+#comment li .comment-area {
+  float: right;
+  width: 78%;
+  min-height: 150px;
+}
+
+#comment li .comment-area h1 {
+  font-family: 'PlayfairDisplayBold', sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  float: left;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-bottom: 8px;
+  color: #222 !important;
+}
+
+#comment li .comment-area h2 {
+  font-weight: normal;
+  float: left;
+  font-size: 1em;
+  margin-top: 24px;
+  margin-left: 5px;
+  margin-bottom: 8px;
+  color: #222 !important;
+}
+
+#comment li .comment-area p {
+  font-weight: normal;
+  font-size: 1em;
+  margin-left: 3px;
+  clear: both;
+  color: #222 !important;
+}
+
+#comment:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/*--- End Comments Section --*/
+/*-----*/
+/*-----*/
+/*--- Start Form Section --*/
+#form {
+  min-height: 100px;
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+
+#form h1 {
+  font-family: 'PlayfairDisplayBold', sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#form form {
+  float: left;
+  width: 100%;
+}
+
+#form form .name-form-area {
+  width: 49%;
+  float: left;
+  position: relative;
+}
+
+#form form .email-form-area {
+  width: 49%;
+  float: right;
+  position: relative;
+}
+
+#form form .message-form-area {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+#form form label.desc {
+  color: #222;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+#form form label.desc.night {
+  color: #fff;
+}
+
+#form form label.error {
+  padding: 0;
+  margin: 0;
+  display: block !important;
+  font-size: 0.8em;
+  color: #fff;
+  width: 100%;
+  height: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#form form label.error.show {
+  color: red;
+}
+
+#form form label.error.night {
+  color: #222;
+}
+
+#form form label.error.night.show {
+  color: red;
+}
+
+#form form .button-form-area {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+
+#form form input[name="name"] {
+  width: 100%;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#form form input[name="email"] {
+  width: 100%;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#form form input.valid {
+  -webkit-box-shadow: 0 0 5px #3389cc;
+          box-shadow: 0 0 5px #3389cc;
+  border: 1px solid #3389cc;
+}
+
+#form form input.error {
+  -webkit-box-shadow: 0 0 5px red;
+          box-shadow: 0 0 5px red;
+  border: 1px solid red;
+}
+
+#form form textarea {
+  width: 100%;
+  height: 100px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  resize: vertical;
+}
+
+#form form textarea.valid {
+  -webkit-box-shadow: 0 0 5px #3389cc;
+          box-shadow: 0 0 5px #3389cc;
+  border: 1px solid #3389cc;
+}
+
+#form form textarea.error {
+  -webkit-box-shadow: 0 0 5px red;
+          box-shadow: 0 0 5px red;
+  border: 1px solid red;
+}
+
+#form form input[type=reset] {
+  display: block;
+  width: 49%;
+  float: left;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #eee;
+  cursor: pointer;
+}
+
+#form form input[type=reset]:hover {
+  background: #ddd;
+}
+
+#form form input[type=submit] {
+  display: block;
+  width: 49%;
+  float: right;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #5aabea;
+  cursor: pointer;
+  color: #fff;
+}
+
+#form form input[type=submit]:hover {
+  background: #3389cc;
+}
+
+#form form input:focus,
+#form form select:focus,
+#form form textarea:focus,
+#form form button:focus {
+  outline: none;
+}
+
+#form:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/*--- End Form Section --*/
+/*-----*/
+/*-----*/
+/*--- Start Media Queries --*/
+@media screen and (max-width: 1023px) {
+  /*--- Start HTML --*/
+  * {
+    font-size: 16px;
+  }
+  /*--- End HTML --*/
+  /*-----*/
+  /*-----*/
+  /*--- Start Container --*/
+  #main-container {
+    width: 640px;
+    position: relative;
+  }
+  /*--- End Container --*/
+  /*-----*/
+  /*-----*/
+  /*--- Start Header --*/
+  header {
+    padding: 0;
+  }
+  /*--- End Header --*/
+  /*-----*/
+  /*-----*/
+  /*--- Start Navigation --*/
+  nav {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    background: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    padding-right: 10px;
+  }
+  nav ul {
+    /* Initially we don't want any height, and we want the contents to be hidden */
+    max-height: 0;
+    overflow: hidden;
+    /* Set our transitions up. */
+    -webkit-transition: max-height 0.8s;
+    transition: max-height 0.8s;
+  }
+  nav ul.open {
+    max-height: 250px;
+  }
+  nav li {
+    float: none;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #666;
+  }
+  nav li a {
+    font-size: 0.8em;
+    display: block;
+    text-align: left;
+    padding: 15px 0 15px 30px;
+    color: #fff;
+    background-color: #222;
+  }
+  nav li a:hover {
+    background-color: #999;
+  }
+  nav li a.night {
+    color: #222;
+    background-color: #fff;
+  }
+  nav li a.night:hover {
+    background-color: #999;
+  }
+  #burger-nav {
+    display: block;
+    float: right;
+    background-color: #222;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+  }
+  #burger-nav.night {
+    background-color: #fff;
+  }
+  .burger-svg {
+    fill: #fff;
+  }
+  .burger-svg.night {
+    fill: #222;
+  }
+  /*--- End Navigation --*/
+  /*-----*/
+  /*-----*/
+  /*--- Start Article --*/
+  article {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  article .article-title {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 10px;
+    padding: 0 50px;
+    margin-bottom: 10px;
+    width: 80%;
+  }
+  article .article-date {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+  article .article-date h2 {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+    float: left;
+    margin-right: 0px;
+  }
+  article .article-date .day-night-button {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    float: left;
+    margin-left: 5px;
+  }
+  article .article-content {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  article .article-content p {
+    padding: 0 50px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+  article .article-content figure {
+    padding: 0 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  article .article-content figure figcaption {
+    padding: 0 20px;
+  }
+  article .article-content blockquote {
+    margin: 0 50px;
+    border-left: 2px solid #eee;
+  }
+  article .article-content blockquote p {
+    padding: 10px 15px;
+  }
+  /*--- End Article --*/
+  /*-----*/
+  /*-----*/
+  /*--- Start Main --*/
+  main {
+    margin-bottom: 30px;
+  }
+  /*--- End Main --*/
+  /*-----*/
+  /*-----*/
+  /*--- Start Comments Section --*/
+  #comment h1 {
+    margin-bottom: 40px;
+  }
+  #comment li .photo-area .image-box img {
+    width: 60%;
+    height: 60%;
+  }
+  #comment li .comment-area {
+    min-height: 10px;
+  }
+  #comment li .comment-area h1 {
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+  #comment li .comment-area h2 {
+    margin-top: 14px;
+    margin-bottom: 4px;
+  }
+  #comment li .comment-area p {
+    margin-left: 3px;
+    padding-right: 30px;
+  }
+  /*--- End Comments Section --*/
+  /*-----*/
+  /*-----*/
+  /*--- Start Form Section --*/
+  #form h1 {
+    margin-bottom: 8px;
+  }
+  #form form .name-form-area {
+    width: 100%;
+  }
+  #form form .email-form-area {
+    width: 100%;
+    float: left;
+  }
+  #form form label.desc {
+    margin-bottom: 3px;
+  }
+  #form form label.error {
+    text-align: right;
+    height: 18px;
+  }
+  #form form .button-form-area {
+    margin-top: 18px;
+  }
+  #form form input[name="name"] {
+    padding: 8px;
+  }
+  #form form input[name="email"] {
+    padding: 8px;
+  }
+  #form form textarea {
+    padding: 8px;
+  }
+  #form form input[type=reset] {
+    padding: 8px;
+  }
+  #form form input[type=submit] {
+    padding: 8px;
+  }
+  /*--- End Form Section --*/
+  /*-----*/
+  /*-----*/
+}
+
+@media screen and (max-width: 639px) {
+  /*--- Start HTML --*/
+  * {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  /*--- End HTML --*/
+  /*-----*/
+  /*-----*/
+  /*--- Start Container --*/
+  #main-container {
+    width: 100%;
+    border: none;
+  }
+  #content-container {
+    float: left;
+    display: block;
+    width: 100%;
+    margin-bottom: 0px;
+    border: none;
+  }
+  #content-container:before {
+    display: none;
+  }
+  #content-container:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  #content-container.night {
+    border: none;
+  }
+  #content-container.night:before {
+    display: none;
+  }
+  /*--- End Container --*/
+  /*-----*/
+  /*-----*/
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+  /*--- Start Header --*/
+  header {
+    width: 100%;
+    padding: 0;
+  }
+  /*--- End Header --*/
+  /*-----*/
+  /*-----*/
+  /*--- Start Article --*/
+  article .article-title {
+    padding: 0 10px;
+  }
+  article .article-date {
+    padding: 0 10px;
+  }
+  article .article-date h2 {
+    margin-top: 10px;
+  }
+  article .article-content p {
+    padding: 0 10px;
+  }
+  article .article-content figure {
+    padding: 0 10px;
+  }
+  article .article-content blockquote {
+    margin: 0 10px;
+  }
+  /*--- End Article --*/
+  /*-----*/
+  /*-----*/
+  /*--- Start Fin --*/
+  #fin {
+    padding: 0 10px;
+  }
+  #fin .fin-inner .line {
+    display: none;
+  }
+  #fin .fin-inner p {
+    text-align: right;
+    float: right;
+  }
+  /*--- End Fin --*/
+  /*-----*/
+  /*-----*/
+  /*--- Start Comments Section --*/
+  #comment {
+    padding: 0 10px;
+  }
+  #comment h1 {
+    margin-bottom: 40px;
+  }
+  #comment li {
+    margin-bottom: 30px;
+  }
+  #comment li .photo-area .image-box img {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #comment li .comment-area {
+    min-height: 10px;
+    padding-bottom: 20px;
+  }
+  #comment li .comment-area h1 {
+    margin-top: 10px;
+  }
+  #comment li .comment-area h2 {
+    margin-top: 14px;
+  }
+  /*--- End Comments Section --*/
+  /*-----*/
+  /*-----*/
+  /*--- Start Form Section --*/
+  #form {
+    padding: 0 10px;
+  }
+  #form h1 {
+    margin-bottom: 8px;
+  }
+  #form form .name-form-area {
+    width: 100%;
+  }
+  #form form .email-form-area {
+    width: 100%;
+    float: left;
+  }
+  #form form label.desc {
+    margin-bottom: 3px;
+  }
+  #form form label.error {
+    text-align: right;
+    height: 18px;
+  }
+  #form form .button-form-area {
+    margin-top: 18px;
+  }
+  #form form input[name="name"] {
+    padding: 8px;
+  }
+  #form form input[name="email"] {
+    padding: 8px;
+  }
+  #form form textarea {
+    padding: 8px;
+  }
+  #form form input[type=reset] {
+    padding: 8px;
+  }
+  #form form input[type=submit] {
+    padding: 8px;
+  }
+  /*--- End Form Section --*/
+  /*-----*/
+  /*-----*/
+}
+
+/*--- End Media Queries --*/
+/*-----*/
+/*-----*/

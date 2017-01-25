@@ -1,0 +1,22 @@
+{
+    "comments": [
+        {
+            "name": "Jane Doe",
+            "avatar": "http://lorempixel.com/100/100/people/1/",
+            "data": "8 Oktober 2016",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae omnis eligendi temporibus porro ad quia reiciendis facere aperiam accusamus beatae cum alias esse, doloremque aspernatur, nemo sunt deserunt excepturi cupiditate."
+        },
+        {
+            "name": "John Doe",
+            "avatar": "http://lorempixel.com/100/100/people/2/",
+            "data": "8 Oktober 2016",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, assumenda."
+        },
+        {
+            "name": "John Hancock",
+            "avatar": "http://lorempixel.com/100/100/people/3/",
+            "data": "9 Oktober 2016",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima eaque, iste temporibus earum eum?"
+        }
+    ]
+}

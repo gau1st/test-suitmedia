@@ -1,0 +1,31 @@
+{
+  "name": "starter-project-frontend",
+  "version": "1.0.0",
+  "description": "Starter project for frontend website using Gulp, Pug, Sass, and Browsersync",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "starter-project-frontend"
+  },
+  "keywords": [
+    "frontend",
+    "gulp",
+    "sass",
+    "pug",
+    "jade",
+    "browsersync"
+  ],
+  "author": "Gilang Esha Gautama",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-pug": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0"
+  }
+}
