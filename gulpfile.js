@@ -10,7 +10,7 @@ const reload = browserSync.reload;
 
 // Compile sass files to css
 gulp.task('sass', function () {
-  return gulp.src('./assets/css/**/*.scss')
+  return gulp.src('./assets/css/style.scss')
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer({
         browsers: ['last 15 versions'],

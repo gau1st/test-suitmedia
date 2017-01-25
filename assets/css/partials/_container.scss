@@ -1,0 +1,53 @@
+/*--- Start Container --*/
+#main-container {
+   margin: auto;
+   width: 1024px;
+   min-height: 300px;
+   &:after {
+      display: block;
+      content: "";
+      clear: both;
+   }
+}
+
+#content-container {
+   background: #fff;
+   width: 100%;
+   border: 1px solid #ddd;
+   position: relative;
+   margin-bottom: 20px;
+   &:after {
+      display: block;
+      content: "";
+      clear: both;
+   }
+   &:before {
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      background: #fff;
+      left: 8px;
+      top: 8px;
+      border: 1px solid #ddd;
+   }
+   &.night{
+      background: #222;
+      border: 1px solid #222;
+      &:before {
+         content: "";
+         height: 100%;
+         position: absolute;
+         width: 100%;
+         z-index: -1;
+         background: #222;
+         left: 8px;
+         top: 8px;
+         border: 1px solid #222;
+      }
+   }
+}
+/*--- End Container --*/
+/*-----*/
+/*-----*/

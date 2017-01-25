@@ -1,0 +1,12 @@
+/*--- Start Header --*/
+header{
+   padding: 20px 0;
+   &:after {
+      display: block;
+      content: "";
+      clear: both;
+   }
+}
+/*--- End Header --*/
+/*-----*/
+/*-----*/

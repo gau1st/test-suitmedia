@@ -1,0 +1,43 @@
+/*--- Start Navigation --*/
+nav {
+   float: right;
+   margin: 0 10px;
+   h2 {
+      line-height: 0;
+      margin: 0;
+   }
+   li {
+      list-style-type: none;
+      float: left;
+      margin-left: 20px;
+      margin-top: 10px;
+      a {
+         text-decoration: none;
+         color: #222;
+         text-transform: uppercase;
+         font-weight: bold;
+         &.current {
+            color: #ff7200;
+         }
+         &:hover {
+            color: #ff7200;
+         }
+         &.night {
+            color: #fff;
+            &.current {
+               color: #ff7200;
+            }
+            &:hover {
+               color: #ff7200;
+            }
+         }
+      }
+
+   }
+}
+#burger-nav{
+   display: none;
+}
+/*--- End Navigation --*/
+/*-----*/
+/*-----*/

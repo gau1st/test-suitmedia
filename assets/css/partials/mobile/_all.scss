@@ -1,0 +1,178 @@
+@media screen and (max-width:639px) {
+   /*--- Start HTML --*/
+   * {
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+   }
+   /*--- End HTML --*/
+   /*-----*/
+   /*-----*/
+
+   /*--- Start Container --*/
+   #main-container {
+      width: 100%;
+      border: none;
+   }
+   #content-container {
+      float: left;
+      display: block;
+      width: 100%;
+      margin-bottom: 0px;
+      border: none;
+      &:before {
+         display: none;
+      }
+      &:after {
+         display: block;
+         content: "";
+         clear: both;
+      }
+      &.night {
+         border: none;
+         &:before {
+            display: none;
+         }
+      }
+   }
+   /*--- End Container --*/
+   /*-----*/
+   /*-----*/
+
+   nav {
+      margin: 0;
+      padding: 0;
+   }
+
+   /*--- Start Header --*/
+   header{
+      width: 100%;
+      padding: 0;
+   }
+   /*--- End Header --*/
+   /*-----*/
+   /*-----*/
+
+   /*--- Start Article --*/
+   article {
+      .article-title {
+         padding: 0 10px;
+      }
+      .article-date {
+         padding: 0 10px;
+         h2 {
+            margin-top: 10px;
+         }
+      }
+      .article-content {
+         p {
+            padding: 0 10px;
+         }
+         figure {
+            padding: 0 10px;
+         }
+         blockquote {
+            margin: 0 10px;
+         }
+      }
+   }
+   /*--- End Article --*/
+   /*-----*/
+   /*-----*/
+
+   /*--- Start Fin --*/
+   #fin {
+      padding: 0 10px;
+      .fin-inner{
+         .line {
+            display: none;
+         }
+         p {
+            text-align: right;
+            float: right;
+         }
+      }
+   }
+   /*--- End Fin --*/
+   /*-----*/
+   /*-----*/
+
+   /*--- Start Comments Section --*/
+   #comment {
+      padding: 0 10px;
+      h1 {
+         margin-bottom: 40px;
+      }
+      li {
+         margin-bottom: 30px;
+         .photo-area {
+            .image-box {
+               img {
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%
+               }
+            }
+         }
+         .comment-area {
+            min-height: 10px;
+            padding-bottom: 20px;
+            h1 {
+               margin-top: 10px;
+            }
+            h2 {
+               margin-top: 14px;
+            }
+         }
+      }
+   }
+   /*--- End Comments Section --*/
+   /*-----*/
+   /*-----*/
+
+   /*--- Start Form Section --*/
+   #form {
+      padding: 0 10px;
+      h1 {
+         margin-bottom: 8px;
+      }
+      form {
+         .name-form-area {
+            width: 100%;
+         }
+         .email-form-area {
+            width: 100%;
+            float: left;
+         }
+         label.desc {
+            margin-bottom: 3px;
+         }
+         label.error {
+            text-align: right;
+            height: 18px;
+         }
+         .button-form-area {
+            margin-top: 18px;
+         }
+         input[name="name"]{
+            padding: 8px;
+         }
+         input[name="email"]{
+            padding: 8px;
+         }
+         textarea {
+            padding: 8px;
+         }
+         input[type=reset]{
+            padding: 8px;
+         }
+         input[type=submit]{
+            padding: 8px;
+         }
+      }
+   }
+   /*--- End Form Section --*/
+   /*-----*/
+   /*-----*/
+}

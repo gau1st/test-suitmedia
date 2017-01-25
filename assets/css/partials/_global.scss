@@ -1,0 +1,29 @@
+/*--- Start HTML --*/
+* {
+   font-family: 'PlayfairDisplayRegular', sans-serif;
+   font-size: 18px;
+   transition: .3s;
+}
+
+body {
+   background: #eee;
+   overflow-x: hidden;
+   &.night {
+      background: #222;
+   }
+}
+
+body, ul, li {
+   margin: 0;
+   padding: 0;
+}
+
+p, li, h1, h2, h3, h4 {
+   color: #222;
+   &.night {
+      color: #fff;
+   }
+}
+/*--- End HTML --*/
+/*-----*/
+/*-----*/

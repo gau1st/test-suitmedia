@@ -1,0 +1,88 @@
+/*--- Start Comments Section --*/
+#comment {
+   min-height: 100px;
+   padding: 0 50px;
+   h1 {
+      font-family: 'PlayfairDisplayBold', sans-serif;
+      font-size: 1.2em;
+      font-weight: normal;
+      margin: 0;
+      margin-bottom: 50px;
+   }
+   li {
+      float: left;
+      margin-bottom: 40px;
+      list-style-type: none;
+      display: block;
+      width: 100%;
+      min-height: 100px;
+      background: #ddd;
+      border: 2px solid #ddd;
+      .photo-area {
+         position: relative;
+         float: left;
+         width: 20%;
+         height: 100px;
+         .image-box {
+            position: relative;
+	         width: 80%;		/* desired width */
+            background-color:#fff;
+            z-index: 99999;
+            margin: auto;
+            margin-top: -20px;
+            border: 1px solid #ddd;
+            img {
+               position: absolute;
+               top: 5%;
+               left: 5%;
+               min-width: 90%;
+               min-height: 90%
+            }
+            &:before{
+            	content: "";
+            	display: block;
+            	padding-top: 100%; 	/* initial ratio of 1:1*/
+            }
+         }
+      }
+      .comment-area {
+         float: right;
+         width: 78%;
+         min-height: 150px;
+         h1 {
+            font-family: 'PlayfairDisplayBold', sans-serif;
+            font-weight: normal;
+            font-size: 1.2em;
+            float: left;
+            margin-top: 20px;
+            margin-left: 5px;
+            margin-bottom: 8px;
+            color: #222 !important;
+         }
+         h2 {
+            font-weight: normal;
+            float: left;
+            font-size: 1em;
+            margin-top: 24px;
+            margin-left: 5px;
+            margin-bottom: 8px;
+            color: #222 !important;
+         }
+         p {
+            font-weight: normal;
+            font-size: 1em;
+            margin-left: 3px;
+            clear: both;
+            color: #222 !important;
+         }
+      }
+   }
+   &:after {
+      display: block;
+      content: "";
+      clear: both;
+   }
+}
+/*--- End Comments Section --*/
+/*-----*/
+/*-----*/
