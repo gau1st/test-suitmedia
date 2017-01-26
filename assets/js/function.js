@@ -33,9 +33,11 @@ $(document).ready(function(){
 
    /* Default mode  */
    var isDay = true;
+   var isNight = document.cookie.replace(/(?:(?:^|.*;\s*)isNight\s*\=\s*([^;]*).*$)|^.*$/, "$1");
 
-   /* if cookie say "isNight" then set night mode for default mode */
-   if (document.cookie == "isNight") {
+   /* if cookie say "isNight = true" then set night mode for default mode */
+   if (isNight=="true") {
+      $("*").css("transition", "0s");
       $body.toggleClass("night");
       $dayNightButton.toggleClass("night");
       $contentContainer.toggleClass("night");
@@ -50,6 +52,9 @@ $(document).ready(function(){
       $h1.toggleClass("night");
       $h2.toggleClass("night");
       isDay = false;
+      setTimeout(function() {
+         $("*").css("transition", "0.8s");
+      }, 1000);
    }
 
    /* Action button when $dayNightButton clicked */
@@ -70,16 +75,17 @@ $(document).ready(function(){
       $h2.toggleClass("night");
 
       if (isDay) {
-         /* Set cookie value to 'isNight' if default mode is day (isDay = True)  */
-         document.cookie = "isNight";
+         /* Set cookie value to 'isNight = true' if default mode is day (isDay = True)  */
+         document.cookie = "isNight="+true;
          isDay = false;
          $dayNightButton.text("Day Mode");
       } else {
          /* Delete cookie value if default mode is night (isDay = False)  */
-         document.cookie = "isNight; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+         document.cookie = 'isNight=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
          isDay = true;
          $dayNightButton.text("Night Mode");
       }
+
    });
    //
    // End Day Night
