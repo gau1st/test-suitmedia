@@ -958,6 +958,9 @@ article .article-content blockquote p {
   article .article-content figure {
     padding: 0 10px;
   }
+  article .article-content figure figcaption {
+    padding: 0;
+  }
   article .article-content blockquote {
     margin: 0 10px;
   }
